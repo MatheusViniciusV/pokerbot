@@ -11,12 +11,9 @@ int main()
     Mesa mesa;
 
     baralho_inicializa(baralho);
-
-    for(int i = 0; i < 5; i++)
-    {
-        mesa[i] = baralho[i];
-    }
-
+    mesa_flop(baralho, mesa);
+    mesa_turn(baralho, mesa);
+    mesa_river(baralho, mesa);
     mesa_imprime(mesa);
 
     return 0;
